@@ -44,7 +44,7 @@ export default function Header() {
   return (
     <header
       className={clsx(
-        "bg-background/95 backdrop-blur-sm border-b border-border",
+        "bg-background/95 border-border border-b backdrop-blur-sm",
         "text-foreground",
         "flex",
         "w-full",
@@ -57,22 +57,22 @@ export default function Header() {
       )}
     >
       {/* Logo */}
-      <Link href="/" className="shrink-0 animate-slide-in-left">
-        <div className="flex flex-col items-center sm:flex-row sm:space-x-3 group">
+      <Link href="/" className="animate-slide-in-left shrink-0">
+        <div className="group flex flex-col items-center sm:flex-row sm:space-x-3">
           <Image
             src={logo}
             alt="Logo"
             width={60}
             height={60}
-            className="sm:h-20 sm:w-20 hover:scale-110 transition-all duration-300 brightness-0 invert group-hover:brightness-100 group-hover:invert-0 group-hover:hue-rotate-180"
+            className="brightness-0 invert transition-all duration-300 group-hover:brightness-100 group-hover:hue-rotate-180 group-hover:invert-0 hover:scale-110 sm:h-20 sm:w-20"
           />
           <span
             className={clsx(
-              "sm:text-lg text-center text-sm font-extrabold sm:text-left",
+              "text-center text-sm font-extrabold sm:text-left sm:text-lg",
               "transition-all duration-300",
               "group-hover:text-primary text-foreground",
               "mt-1 sm:mt-0",
-              "bg-linear-to-r from-primary to-secondary bg-clip-text group-hover:text-transparent",
+              "from-primary to-secondary bg-linear-to-r bg-clip-text group-hover:text-transparent",
             )}
           >
             BRUNO GUSMÃO MULIM
@@ -81,16 +81,31 @@ export default function Header() {
       </Link>
 
       {/* Desktop Navigation */}
-      <div className="hidden lg:block animate-slide-in-right animation-delay-300">
+      <div className="animate-slide-in-right animation-delay-300 hidden lg:block">
         <nav>
           <ul className="flex justify-around space-x-4 px-12">
-            <li className={clsx(liClasses, "animate-fade-in-up animation-delay-400")}>
+            <li
+              className={clsx(
+                liClasses,
+                "animate-fade-in-up animation-delay-400",
+              )}
+            >
               <Link href="/services">Serviços</Link>
             </li>
-            <li className={clsx(liClasses, "animate-fade-in-up animation-delay-500")}>
+            <li
+              className={clsx(
+                liClasses,
+                "animate-fade-in-up animation-delay-500",
+              )}
+            >
               <Link href="/portfolio">Portfólio</Link>
             </li>
-            <li className={clsx(liClasses, "animate-fade-in-up animation-delay-600")}>
+            <li
+              className={clsx(
+                liClasses,
+                "animate-fade-in-up animation-delay-600",
+              )}
+            >
               <Link href="/contact">Contato</Link>
             </li>
           </ul>
@@ -100,7 +115,7 @@ export default function Header() {
       {/* Mobile Menu Button */}
       <button
         onClick={toggleMenu}
-        className="bg-card/50 hover:bg-card border border-border rounded-lg p-2 transition-all duration-300 focus:ring-2 focus:ring-primary focus:outline-none lg:hidden animate-fade-in animation-delay-400 hover:scale-110"
+        className="bg-card/50 hover:bg-card border-border focus:ring-primary animate-fade-in animation-delay-400 rounded-lg border p-2 transition-all duration-300 hover:scale-110 focus:ring-2 focus:outline-none lg:hidden"
         aria-label="Toggle menu"
       >
         <div className="flex h-6 w-6 flex-col items-center justify-center">
@@ -128,7 +143,7 @@ export default function Header() {
       {/* Mobile Menu */}
       <div
         className={clsx(
-          "bg-background/95 backdrop-blur-sm border-b border-border absolute top-full left-0 z-50 w-full shadow-xl shadow-primary/10 transition-all duration-300 ease-in-out lg:hidden",
+          "bg-background/95 border-border shadow-primary/10 absolute top-full left-0 z-50 w-full border-b shadow-xl backdrop-blur-sm transition-all duration-300 ease-in-out lg:hidden",
           isMenuOpen
             ? "visible translate-y-0 transform opacity-100"
             : "invisible -translate-y-2 transform opacity-0",
@@ -170,7 +185,7 @@ export default function Header() {
       {/* Overlay para fechar menu ao clicar fora (mobile) */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-background/50 backdrop-blur-sm lg:hidden"
+          className="bg-background/50 fixed inset-0 z-40 backdrop-blur-sm lg:hidden"
           onClick={() => setIsMenuOpen(false)}
         />
       )}
