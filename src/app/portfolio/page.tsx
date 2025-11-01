@@ -2,76 +2,82 @@ export default function PortfolioPage() {
   return (
     <main className="bg-background text-foreground min-h-screen px-4 py-8">
       <div className="mx-auto max-w-6xl">
-        <h1 className="text-primary mb-8 text-center text-4xl font-bold">
+        <h1 className="text-primary animate-fade-in mb-8 text-center text-4xl font-bold">
           Portfólio
         </h1>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <div className="bg-card text-card-foreground border-border rounded-lg border p-6">
-            <div className="bg-primary/20 mb-4 flex h-48 items-center justify-center rounded-lg">
+          <div className="bg-card text-card-foreground border-border hover:shadow-primary/20 animate-fade-in-up animation-delay-200 group transform rounded-lg border p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="bg-primary/20 group-hover:bg-primary/30 mb-4 flex h-48 items-center justify-center rounded-lg transition-colors duration-300">
               <span className="text-primary font-semibold">Projeto 1</span>
             </div>
-            <h3 className="mb-2 text-xl font-semibold">E-commerce Moderno</h3>
+            <h3 className="group-hover:text-primary mb-2 text-xl font-semibold transition-colors duration-300">
+              E-commerce Moderno
+            </h3>
             <p className="text-card-foreground/80 mb-4">
               Plataforma completa de e-commerce com painel administrativo e
               integração com gateways de pagamento.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="bg-accent/20 text-accent rounded px-2 py-1 text-sm">
+              <span className="bg-accent/20 text-accent hover:bg-accent/30 rounded px-2 py-1 text-sm transition-colors duration-200">
                 React
               </span>
-              <span className="bg-accent/20 text-accent rounded px-2 py-1 text-sm">
+              <span className="bg-accent/20 text-accent hover:bg-accent/30 rounded px-2 py-1 text-sm transition-colors duration-200">
                 Node.js
               </span>
-              <span className="bg-accent/20 text-accent rounded px-2 py-1 text-sm">
+              <span className="bg-accent/20 text-accent hover:bg-accent/30 rounded px-2 py-1 text-sm transition-colors duration-200">
                 MongoDB
               </span>
             </div>
           </div>
 
-          <div className="bg-card text-card-foreground border-border rounded-lg border p-6">
-            <div className="bg-secondary/20 mb-4 flex h-48 items-center justify-center rounded-lg">
+          <div className="bg-card text-card-foreground border-border hover:shadow-secondary/20 animate-fade-in-up animation-delay-400 group transform rounded-lg border p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="bg-secondary/20 group-hover:bg-secondary/30 mb-4 flex h-48 items-center justify-center rounded-lg transition-colors duration-300">
               <span className="text-secondary-foreground font-semibold">
                 Projeto 2
               </span>
             </div>
-            <h3 className="mb-2 text-xl font-semibold">App de Delivery</h3>
+            <h3 className="group-hover:text-primary mb-2 text-xl font-semibold transition-colors duration-300">
+              App de Delivery
+            </h3>
             <p className="text-card-foreground/80 mb-4">
               Aplicativo mobile para delivery com tracking em tempo real e
               sistema de pagamento integrado.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="bg-accent/20 text-accent rounded px-2 py-1 text-sm">
+              <span className="bg-accent/20 text-accent hover:bg-accent/30 rounded px-2 py-1 text-sm transition-colors duration-200">
                 React Native
               </span>
-              <span className="bg-accent/20 text-accent rounded px-2 py-1 text-sm">
+              <span className="bg-accent/20 text-accent hover:bg-accent/30 rounded px-2 py-1 text-sm transition-colors duration-200">
                 Firebase
               </span>
-              <span className="bg-accent/20 text-accent rounded px-2 py-1 text-sm">
+              <span className="bg-accent/20 text-accent hover:bg-accent/30 rounded px-2 py-1 text-sm transition-colors duration-200">
                 Maps API
               </span>
             </div>
           </div>
 
-          <div className="bg-card text-card-foreground border-border rounded-lg border p-6">
-            <div className="bg-accent/20 mb-4 flex h-48 items-center justify-center rounded-lg">
+          <div className="bg-card text-card-foreground border-border hover:shadow-accent/20 animate-fade-in-up animation-delay-600 group transform rounded-lg border p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="bg-accent/20 group-hover:bg-accent/30 mb-4 flex h-48 items-center justify-center rounded-lg transition-colors duration-300">
               <span className="text-accent-foreground font-semibold">
                 Projeto 3
               </span>
             </div>
-            <h3 className="mb-2 text-xl font-semibold">Dashboard Analytics</h3>
+            <h3 className="group-hover:text-primary mb-2 text-xl font-semibold transition-colors duration-300">
+              Dashboard Analytics
+            </h3>
             <p className="text-card-foreground/80 mb-4">
               Dashboard avançado para análise de dados com gráficos interativos
               e relatórios customizáveis.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="bg-accent/20 text-accent rounded px-2 py-1 text-sm">
+              <span className="bg-accent/20 text-accent hover:bg-accent/30 rounded px-2 py-1 text-sm transition-colors duration-200">
                 Vue.js
               </span>
-              <span className="bg-accent/20 text-accent rounded px-2 py-1 text-sm">
+              <span className="bg-accent/20 text-accent hover:bg-accent/30 rounded px-2 py-1 text-sm transition-colors duration-200">
                 D3.js
               </span>
-              <span className="bg-accent/20 text-accent rounded px-2 py-1 text-sm">
+              <span className="bg-accent/20 text-accent hover:bg-accent/30 rounded px-2 py-1 text-sm transition-colors duration-200">
                 Python
               </span>
             </div>
