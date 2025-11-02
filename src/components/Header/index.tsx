@@ -64,7 +64,7 @@ export default function Header() {
             alt="Logo"
             width={60}
             height={60}
-            className="brightness-0 invert transition-all duration-300 group-hover:brightness-100 group-hover:hue-rotate-180 group-hover:invert-0 hover:scale-110 sm:h-20 sm:w-20"
+            className="transition-all duration-300 group-hover:scale-110 group-hover:brightness-110 group-hover:contrast-125 sm:h-20 sm:w-20"
           />
           <span
             className={clsx(
