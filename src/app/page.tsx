@@ -36,9 +36,12 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="px-4 py-16 text-center">
         <div className="mx-auto max-w-4xl">
-          <h1 className="text-primary animate-fade-in mb-6 text-4xl font-bold md:text-6xl">
-            Arquitetura limpa, entrega previsível.
+          <h1 className="text-primary animate-fade-in mb-6 text-3xl font-bold md:text-2xl">
+            Produto digital feito para a sua operação.
           </h1>
+          <h3 className="text-primary animate-fade-in mb-6 text-xl font-bold md:text-xl">
+            Tecnologia que encaixa no seu fluxo.
+          </h3>
           <p className="text-foreground/80 animate-fade-in animation-delay-300 mb-8 text-xl md:text-2xl">
             Sistemas sob medida para web e mobile. Do planejamento ao deploy,
             com foco em performance, DX e qualidade de produção.
